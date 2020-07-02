@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import { HashRouter as Router, Route} from "react-router-dom";
+import Wrapper from "./components/Wrapper";
+import Navbar from "./components/Layouts/Navbar";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Contact from './pages/Contact';
+import Footer from "./components/Layouts/Footer";
+import './style.css';
 
-function App() {
+
+
+class App extends Component {
+  
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <Router>
+     <div>
+     <Navbar />
+
+      <Wrapper>
+        <Route exact path="/About" component={About}/>
+        <Route exact path="/Projects" component={Projects}/>
+        <Route exact path="/Contact" component={Contact}/>
+      </Wrapper>
+      <Footer/>
+     </div>
+   </Router>
+    );
+
+
+  }
 }
 
 export default App;
