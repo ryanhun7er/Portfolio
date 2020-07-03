@@ -16,7 +16,6 @@ export default function Skills() {
 							alt='html'
 						/>
 						<h5>HTML</h5>
-
 						<img
 							className='img'
 							src={require('../Assets/Images/csslogo.png')}

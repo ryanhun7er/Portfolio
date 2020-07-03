@@ -21,8 +21,8 @@ const projects = [
 		id: 3,
 		title: 'Daily Planner',
 		image: require('../Assets/Images/study.svg'),
-		description: 'https://ryanhun7er.github.io/dp/',
-		live: 'https://meetbetweenbuns.herokuapp.com/',
+		description: 'Use this app as a daily planner for your day',
+		live: 'https://ryanhun7er.github.io/dp/',
 	},
 	{
 		id: 4,
