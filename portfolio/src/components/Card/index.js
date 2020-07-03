@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../css/style.css';
 
@@ -6,38 +8,31 @@ function Card(props) {
 	console.log(props);
 	return (
 		<>
-			<div id='portfolio'>
-				<div className='container'>
-					<div className='section-title text-center center'></div>
-					<div className='clearfix'></div>
-					<div className='row'>
-						<div className='portfolio-items'>
-							<div className='col-sm-6 col-md-3 col-lg-3 app web'>
-								<div className='portfolio-item'>
-									<img
-										src={props.image}
-										className='img-responsive'
-										alt={props.title}
-										fluid
-									/>
+			<div id='portfolio' className='text-center'>
+				{/* <div className='container'> */}
+				<Container className='section-title text-center center'>
+					<Row xs='6' sm='3'>
+						<Col>
+							<img
+								src={props.image}
+								className='img-responsive'
+								alt={props.title}
+								fluid
+							/>
 
-									<div className='hover-text'>
-										<h4 className='card-title'>{props.title}</h4>
-										<p className='card-text overflow-auto'>
-											{props.description}
-										</p>
-										<a
-											className='btn btn-link btn-sm'
-											href={props.live}
-											rel='noopener'>
-											view live
-										</a>
-									</div>
-								</div>
+							<div className='hover-text'>
+								<h4 className='card-title'>{props.title}</h4>
+								<p className='card-text overflow-auto'>{props.description}</p>
+								<a
+									className='btn btn-link btn-sm'
+									href={props.live}
+									rel='noopener'>
+									view live
+								</a>
 							</div>
-						</div>
-					</div>
-				</div>
+						</Col>
+					</Row>
+				</Container>
 			</div>
 		</>
 	);

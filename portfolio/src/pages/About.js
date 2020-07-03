@@ -11,7 +11,6 @@ function About() {
 			<CardContent />
 			<Skills />
 			<Contact />
-
 		</>
 	);
 }

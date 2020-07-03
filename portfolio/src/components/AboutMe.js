@@ -29,18 +29,18 @@ export default function About() {
 								me today and let's get to work!
 							</p>
 							<div id='resume'>
-							<p className='text-center'>
-								<a href={Pdf} target='_blank'>
-									Download My Resume
-									<hr></hr>
-									<img
-										src={require('../Assets/Images/dl.png')}
-										id='logo2'
-										width='1'
-										height='1'
-										alt='download logo'></img>
-								</a>
-							</p>
+								<p className='text-center'>
+									<a href={Pdf} target='_blank'>
+										Download My Resume
+										<hr></hr>
+										<img
+											src={require('../Assets/Images/dl.png')}
+											id='logo2'
+											width='1'
+											height='1'
+											alt='download logo'></img>
+									</a>
+								</p>
 							</div>
 						</div>
 					</div>

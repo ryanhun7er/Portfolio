@@ -17,7 +17,9 @@ function Navbar() {
 									Hello, I'm <span class='name'>Ryan</span>
 								</h1>
 								<p>Full Stack Web Developer</p>
-								<Link to='#about' className='btn btn-default btn-lg page-scroll'>
+								<Link
+									to='#about'
+									className='btn btn-default btn-lg page-scroll'>
 									Learn More
 								</Link>{' '}
 							</div>
@@ -37,7 +39,7 @@ function Navbar() {
 								{' '}
 								<i class='fa fa-bars'></i>{' '}
 							</button>
-							<a class='navbar-brand page-scroll' href='/about'>
+							<a className='navbar-brand page-scroll' href='/about'>
 								Home
 							</a>{' '}
 						</div>
@@ -46,68 +48,21 @@ function Navbar() {
 								<li className='hidden'>
 									<a href='#page-top'></a>
 								</li>
-								<Link
-									to='/'
-									className={
-										window.location.pathname === '/' ||
-										window.location.pathname === '/'
-											? 'nav-link active'
-											: 'nav-link'
-									}></Link>
+								<Link to='/'></Link>
 								<li className='page-scroll' href='#about'>
-									<Link
-										to='#about'
-										className={
-											window.location.pathname === '#about'
-												? 'nav-link active'
-												: 'nav-link'
-										}>
-										About
-									</Link>
+									<Link to='#about'>About</Link>
 								</li>{' '}
 								<li className='page-scroll' href='#skills'>
-									<Link
-										to='#skills'
-										className={
-											window.location.pathname === '#skills'
-												? 'nav-link active'
-												: 'nav-link'
-										}>
-										Skills
-									</Link>
+									<Link to='#skills'>Skills</Link>
 								</li>{' '}
 								<li className='page-scroll' href='#portfolio'>
-									<Link
-										to='#portfolio'
-										className={
-											window.location.pathname === '#porfolio'
-												? 'nav-link active'
-												: 'nav-link'
-										}>
-										Portfolio
-									</Link>
+									<Link to='#portfolio'>Portfolio</Link>
 								</li>{' '}
 								<li className='page-scroll' href='#resume'>
-									<Link
-										to='#resume'
-										className={
-											window.location.pathname === '#resume'
-												? 'nav-link active'
-												: 'nav-link'
-										}>
-										Resume
-									</Link>
+									<Link to='#resume'>Resume</Link>
 								</li>{' '}
 								<li className='page-scroll' href='#contact'>
-									<Link
-										to='#contact'
-										className={
-											window.location.pathname === '#contact'
-												? 'nav-link active'
-												: 'nav-link'
-										}>
-										Contact
-									</Link>
+									<Link to='#contact'>Contact</Link>
 								</li>{' '}
 							</ul>
 						</div>
