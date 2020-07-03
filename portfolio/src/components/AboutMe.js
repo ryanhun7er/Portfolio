@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/style.css';
-import Pdf from '../Assets/Files/Profile.pdf'
+import Pdf from '../Assets/Files/Profile.pdf';
 
 export default function About() {
 	return (
@@ -28,9 +28,11 @@ export default function About() {
 								sure you will be happy with my web development skills. Contact
 								me today and let's get to work!
 							</p>
+							<div id='resume'>
 							<p className='text-center'>
-								<a href={Pdf} target = '_blank'>Download My Resume
-								<hr></hr>
+								<a href={Pdf} target='_blank'>
+									Download My Resume
+									<hr></hr>
 									<img
 										src={require('../Assets/Images/dl.png')}
 										id='logo2'
@@ -39,15 +41,15 @@ export default function About() {
 										alt='download logo'></img>
 								</a>
 							</p>
+							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
 			<div className='section-title text-center center'>
-						<h2>Portfolio</h2>
-						<hr></hr>
-					</div>
+				<h2>Portfolio</h2>
+				<hr></hr>
+			</div>
 		</>
 	);
 }
