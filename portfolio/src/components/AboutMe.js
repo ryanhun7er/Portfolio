@@ -4,16 +4,18 @@ import '../css/style.css';
 export default function About() {
 	return (
 		<>
-			<div className='row-space'> </div>
-			<div className='d-flex justify-content-center about-section' id='about'>
-				<div className='container text-wrap'>
-					<div className='d-flex justify-content-center'>
-						<div className='text-wrap'>
+			<div id='about'>
+				<div className='container'>
+					<div className='section-title text-center center'>
+						<h2>About Me</h2>
+						<hr></hr>
+					</div>
+					<div className='row'>
+						<div className='col-md-12 text-center'>
 							<img
-								className='text-center'
+								className='img-responsive'
 								src={require('../Assets/Images/about.jpg')}
 								alt='portfolio'
-								id='port-pic'
 							/>
 							<p className='aboutMe'>
 								By day, I am the Director of Enterprise Technology at The Bakery

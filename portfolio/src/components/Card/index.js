@@ -18,6 +18,7 @@ function Card(props) {
 										src={props.image}
 										className='img-responsive'
 										alt={props.title}
+										fluid
 									/>
 
 									<div className='hover-text'>
