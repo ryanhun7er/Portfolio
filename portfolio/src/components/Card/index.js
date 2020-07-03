@@ -1,22 +1,45 @@
-import React from "react";
+import React from 'react';
 
-import "../../css/style.css";
-
+import '../../css/style.css';
 
 function Card(props) {
-    console.log(props);
-    return (
-        <div className= "container-fluid d-inline-flex mb-3 h-25 d-inline-block card">
-            <div className="img-container">
-        <img src= {props.image} className="card-img-top" alt={props.title}/>
-        </div>
-        <div className="card-body overflow-auto">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text overflow-auto">{props.description}</p>
-          <a className="btn btn-link btn-sm" href={props.live} rel="noopener">view live</a>
-        </div>
-      </div>
-    );
-  }
-  
-  export default Card;
+	console.log(props);
+	return (
+		<>
+			<div id='portfolio'>
+				<div className='container'>
+					<div className='section-title text-center center'></div>
+					<div className='clearfix'></div>
+					<div className='row'>
+						<div className='portfolio-items'>
+							<div className='col-sm-6 col-md-3 col-lg-3 app web'>
+								<div className='portfolio-item'>
+									<img
+										src={props.image}
+										className='img-responsive'
+										alt={props.title}
+									/>
+
+									<div className='hover-text'>
+										<h4 className='card-title'>{props.title}</h4>
+										<p className='card-text overflow-auto'>
+											{props.description}
+										</p>
+										<a
+											className='btn btn-link btn-sm'
+											href={props.live}
+											rel='noopener'>
+											view live
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+}
+
+export default Card;

@@ -6,13 +6,13 @@ import '../../css/style.css';
 function Navbar() {
 	return (
 		<div id='nav'>
-			<nav className='navbar navbar-expand-lg'>
+			<nav className='navbar navbar-custom'>
 				<div className='container'>
-					<Link className='navbar-brand' to='/'>
+					<Link className='navbar-header' to='/'>
 						Ryan  Wilkinson -  Full Stack Web Developer
 					</Link>
-					<div>
-						<ul className='navbar-brand nav-item'>
+					<div className="collapse navbar-collapse navbar-right navbar-main-collapse">
+						<ul className='nav navbar-nav'>
 							<li className='hidden'>
 								<a href='#page-top'></a>
 							</li>
@@ -24,9 +24,9 @@ function Navbar() {
 										? 'nav-link active'
 										: 'nav-link'
 								}>
-								Home
+								
 							</Link>
-							<li className='navbar-brand nav-item' href='#about'>
+							<li className='page-scroll' href='#about'>
 								<Link
 									to='/page'
 									className={
@@ -37,7 +37,7 @@ function Navbar() {
 									About
 								</Link>
 							</li>{' '}
-							<li className='navbar-brand nav-item' href='#skills'>
+							<li className='page-scroll' href='#skills'>
 								<Link
 									to='#skills'
 									className={
@@ -48,7 +48,7 @@ function Navbar() {
 									Skills
 								</Link>
 							</li>{' '}
-							<li className='navbar-brand nav-item' href='#portfolio'>
+							<li className='page-scroll' href='#portfolio'>
 								<Link
 									to='#portfolio'
 									className={
@@ -59,7 +59,7 @@ function Navbar() {
 									Portfolio
 								</Link>
 							</li>{' '}
-							<li className='navbar-brand nav-item' href='#resume'>
+							<li className='page-scroll' href='#resume'>
 								<Link
 									to='#resume'
 									className={
@@ -70,7 +70,7 @@ function Navbar() {
 									Resume
 								</Link>
 							</li>{' '}
-							<li className='navbar-brand nav-item' href='#contact'>
+							<li className='page-scroll' href='#contact'>
 								<Link
 									to='#contact'
 									className={
