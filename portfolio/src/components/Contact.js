@@ -4,7 +4,9 @@ import '../css/style.css';
 export default function Contact() {
 	return (
 		<>
-			<div className='row-space'> </div>
+			<div className='row-space' id='contact'>
+				{' '}
+			</div>
 			<div className='contact-container text-center'>
 				<div className='section-title center'>
 					<h2 className='contact-title'>Contact Me</h2>

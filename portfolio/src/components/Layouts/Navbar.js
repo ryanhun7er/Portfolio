@@ -1,11 +1,8 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../../css/style.css';
-// import Navbar from 'react-bootstrap/Navbar';
 
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
+function NavbarCont() {
 	return (
 		<>
 			<header id='header'>
@@ -73,4 +70,4 @@ function Navbar() {
 	);
 }
 
-export default Navbar;
+export default NavbarCont;

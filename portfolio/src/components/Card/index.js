@@ -9,7 +9,6 @@ function Card(props) {
 	return (
 		<>
 			<div id='portfolio' className='text-center'>
-				{/* <div className='container'> */}
 				<Container className='section-title text-center center'>
 					<Row xs='6' sm='3'>
 						<Col>
