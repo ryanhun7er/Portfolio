@@ -6,6 +6,7 @@ export default function Skills() {
 		<>
 			<div className='text-center' id='skills'>
 				<h2>Skills</h2>
+				<hr></hr>
 				<span className='stretch'>
 					<div className='section-title center'>
 						<img
@@ -56,6 +57,14 @@ export default function Skills() {
 							alt='mongodb'
 						/>
 						<h5>MongoDB</h5>
+						<img
+							className='img'
+							src={require('../Assets/Images/react.png')}
+							width='100'
+							height='65'
+							alt='react'
+						/>
+						<h5>React</h5>
 					</div>
 				</span>
 			</div>
