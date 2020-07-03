@@ -10,7 +10,7 @@ export default function About() {
 					<div className='d-flex justify-content-center'>
 						<div className='text-wrap'>
 							<img
-								className='col-md-12 text-center'
+								className='text-center'
 								src={require('../Assets/Images/about.jpg')}
 								alt='portfolio'
 								id='port-pic'
@@ -25,8 +25,8 @@ export default function About() {
 								sure you will be happy with my web development skills. Contact
 								me today and let's get to work!
 							</p>
-							<p classname='text-center'>
-								<a classname='button' href='../Assets/Files/Profile.pdf'>
+							<p className='text-center'>
+								<a className='button' href='../Assets/Files/Profile.pdf'>
 									<img
 										src={require('../Assets/Images/dl.png')}
 										id='logo2'

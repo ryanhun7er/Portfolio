@@ -10,7 +10,6 @@ export default function Contact() {
 					<h2 className='contact-title'>Contact Me</h2>
 
 					<div className='contact-container'>
-						
 						<a className='contact-img'>
 							<img
 								src={require('../Assets/Images/guitar.gif')}
@@ -21,16 +20,17 @@ export default function Contact() {
 							/>
 							<p>Nashville, TN</p>
 						</a>
-						
+
 						<a className='contact-img' href='mailto:ryanhwilkinson@icloud.com'>
 							{' '}
-							<img 
-							src={require('../Assets/Images/email.gif')}
-							width='70'
-							height='70' 
-							alt='email' />
+							<img
+								src={require('../Assets/Images/email.gif')}
+								width='70'
+								height='70'
+								alt='email'
+							/>
 						</a>
-						
+
 						<a
 							className='contact-img'
 							href='https://www.linkedin.com/in/ryanhunterwilkinson/'>
@@ -41,12 +41,14 @@ export default function Contact() {
 								alt='linkedin'
 							/>
 						</a>
-						
+
 						<a className='contact-img' href='https://github.com/ryanhun7er'>
-							<img src={require('../Assets/Images/github.gif')} 
-							width='70'
-							height='70'
-							alt='github' />
+							<img
+								src={require('../Assets/Images/github.gif')}
+								width='70'
+								height='70'
+								alt='github'
+							/>
 						</a>
 					</div>
 				</div>

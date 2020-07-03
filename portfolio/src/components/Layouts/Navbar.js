@@ -9,9 +9,9 @@ function Navbar() {
 			<nav className='navbar navbar-custom'>
 				<div className='container'>
 					<Link className='navbar-header' to='/'>
-						Ryan  Wilkinson -  Full Stack Web Developer
+						Ryan Wilkinson - Full Stack Web Developer
 					</Link>
-					<div className="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<div className='collapse navbar-collapse navbar-right navbar-main-collapse'>
 						<ul className='nav navbar-nav'>
 							<li className='hidden'>
 								<a href='#page-top'></a>
@@ -23,9 +23,7 @@ function Navbar() {
 									window.location.pathname === '/'
 										? 'nav-link active'
 										: 'nav-link'
-								}>
-								
-							</Link>
+								}></Link>
 							<li className='page-scroll' href='#about'>
 								<Link
 									to='/page'
