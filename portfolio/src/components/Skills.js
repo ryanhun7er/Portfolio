@@ -4,56 +4,59 @@ import '../css/style.css';
 export default function Skills() {
 	return (
 		<>
-			<div className='skills d-flex align-items-center text-center'>
-				<span className='border-bottom-0'>
-					<div className='skill-container d-inline-flex d-inline-block'>
+			<div className='text-center' id='skills'>
+				<h2>Skills</h2>
+				<span className='stretch'>
+					<div className='section-title center'>
 						<img
-							className='skill'
+							className='img'
 							src={require('../Assets/Images/html.png')}
 							width='50'
 							height='50'
 							alt='html'
 						/>
+						<h5>HTML</h5>
 
 						<img
-							className='skill'
+							className='img'
 							src={require('../Assets/Images/csslogo.png')}
 							width='50'
 							height='50'
 							alt='css'
 						/>
-
+						<h5>CSS</h5>
 						<img
-							className='skill'
+							className='img'
 							src={require('../Assets/Images/jslogo.png')}
 							width='105'
 							height='53'
 							alt='javascript'
 						/>
-
+						<h5>JavaScript</h5>
 						<img
-							className='skill'
+							className='img'
 							src={require('../Assets/Images/jquery-icon.png')}
 							width='50'
 							height='50'
 							alt='jquery'
 						/>
-
+						<h5>JQuery</h5>
 						<img
-							className='skill'
+							className='img'
 							src={require('../Assets/Images/mysql.png')}
 							width='95'
 							height='55'
 							alt='mySQL'
 						/>
-
+						<h5>mySql</h5>
 						<img
-							className='skill'
+							className='img'
 							src={require('../Assets/Images/mongo1.png')}
 							width='100'
 							height='65'
 							alt='mongodb'
 						/>
+						<h5>MongoDB</h5>
 					</div>
 				</span>
 			</div>

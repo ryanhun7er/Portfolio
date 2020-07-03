@@ -233,6 +233,13 @@ hr {
 #skills {
 	padding: 100px 0;
 	background: #7bc3d1;
+	width: 100%;
+	margin-left: auto; 
+    margin-right: auto;
+
+     text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
 }
 #skills h2 {
 	color: #fff;
@@ -241,7 +248,7 @@ hr {
 	background: rgba(255, 255, 255, 0.3);
 }
 #skills .skill {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	text-align: center;
 	padding: 0px;
 }
@@ -249,9 +256,14 @@ hr {
 	font-weight: 600;
 	color: #fff;
 }
-.skills {
-	align-items: center;
-}
+.stretch {
+
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0
+	}
+
 .chart {
 	position: relative;
 	display: inline-block;
