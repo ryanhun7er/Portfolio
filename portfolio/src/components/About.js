@@ -1,7 +1,7 @@
 import React from 'react';
-import '../style.css';
+import '../css/style.css';
 
-export default function AboutMe() {
+export default function About() {
 	return (
 		<>
 			<div className='row-space'> </div>
@@ -28,7 +28,7 @@ export default function AboutMe() {
 							<p classname='text-center'>
 								<a classname='button' href='../Assets/Files/Profile.pdf'>
 									<img
-										src={require('Assets/Images/dl.png')}
+										src={require('../Assets/Images/dl.png')}
 										id='logo2'
 										width='1'
 										height='1'
