@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/style.css';
+import Pdf from '../Assets/Files/Profile.pdf'
 
 export default function About() {
 	return (
@@ -28,20 +29,25 @@ export default function About() {
 								me today and let's get to work!
 							</p>
 							<p className='text-center'>
-								<a className='button' href='../Assets/Files/Profile.pdf'>
+								<a href={Pdf} target = '_blank'>Download My Resume
+								<hr></hr>
 									<img
 										src={require('../Assets/Images/dl.png')}
 										id='logo2'
 										width='1'
 										height='1'
 										alt='download logo'></img>
-									Download My Resume
 								</a>
 							</p>
 						</div>
+						
 					</div>
 				</div>
 			</div>
+			<div className='section-title text-center center'>
+						<h2>Portfolio</h2>
+						<hr></hr>
+					</div>
 		</>
 	);
 }
