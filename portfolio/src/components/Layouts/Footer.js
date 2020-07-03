@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<footer className='fixed-bottom footer'>
+		<footer className='footer'>
 			<span className='footer'>Ryan Hunter &copy; 2020</span>
 		</footer>
 	);

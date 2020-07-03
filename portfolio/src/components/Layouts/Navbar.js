@@ -9,7 +9,7 @@ function Navbar() {
 			<nav className='navbar navbar-expand-lg'>
 				<div className='container'>
 					<Link className='navbar-brand' to='/'>
-						R y a n W i l k i n s o n
+						Ryan  Wilkinson -  Full Stack Web Developer
 					</Link>
 					<div>
 						<ul className='navbar-brand nav-item'>
@@ -28,7 +28,7 @@ function Navbar() {
 							</Link>
 							<li className='navbar-brand nav-item' href='#about'>
 								<Link
-									to='#about'
+									to='/page'
 									className={
 										window.location.pathname === '#about'
 											? 'nav-link active'
